@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="id" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Achmad Rafli Teguh Pradana Susanto — Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Mesh Background -->
+    <div class="mesh-bg"><span></span><span></span><span></span></div>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav id="navbar">
+      <div class="nav-logo">RAFLI</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" title="Toggle theme" aria-label="Toggle theme">
+          <img id="themeToggleIcon" class="theme-icon" src="icons/darkmode.png" alt="" />
+        </button>
+        <a
+          href="#contact"
+          class="btn btn-primary"
+          style="padding: 0.5rem 1.2rem; font-size: 0.85rem"
+          >Hire Me</a
+        >
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <img id="menuToggleIcon" class="menu-icon" src="icons/menu.png" alt="" />
+        </button>
+      </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section id="hero">
+      <div class="hero-content">
+        <div class="hero-left">
+          <div class="hero-badge reveal">
+            <span class="badge-dot"></span>
+            Available for work
+          </div>
+          <h1 class="hero-title reveal reveal-delay-1">
+            <span class="line">Crafting</span>
+            <span class="line"
+              ><span class="gradient-text">Beautiful Interfaces</span></span
+            >
+            <span class="line">Pixel by Pixel.</span>
+          </h1>
+          <p class="hero-desc reveal reveal-delay-2">
+            I am an Information Systems student with an interest in <strong>Frontend Development</strong>, focusing on client-side visualization, building beautiful, responsive UIs, and intuitive user experiences using modern web technologies.
+          </p>
+          <div class="hero-actions reveal reveal-delay-3">
+            <a href="#projects" class="btn btn-primary">
+              <span class="btn-icon" aria-hidden="true"><img src="assets/icons/rocket.png" alt="" /></span> View projects
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1HzOIr2LI-9TF2tEAL--BsJBbUw0GTKdI/view?usp=sharing"
+              class="btn btn-outline"
+              target="_blank"
+            >
+              <span class="btn-icon" aria-hidden="true"><img src="assets/icons/document.png" alt="" /></span> Download CV
+            </a>
+          </div>
+          <div class="hero-stats reveal reveal-delay-4">
+            <div class="stat">
+              <div class="stat-num">2<span>+</span></div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">5<span>+</span></div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">5<span>+</span></div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal slide-right">
+          <div class="hero-avatar">
+            <div class="avatar-inner">
+              <div class="avatar-photo" aria-hidden="true">
+                <img src="assets/rafli.png" alt="Foto Rafli" />
+              </div>
+            </div>
+          </div>
+          <div class="floating-card floating-card-1">
+            <span class="icon" aria-hidden="true"><img src="assets/icons/paint.png" alt="" /></span>
+            <div>
+              <div style="font-size: 0.8rem; color: var(--text)">UI Design</div>
+              <div style="font-size: 0.72rem; color: var(--green)">
+                Pixel Perfect
+              </div>
+            </div>
+          </div>
+          <div class="floating-card floating-card-2">
+            <span class="icon" aria-hidden="true"><img src="assets/icons/react.png" alt="" /></span>
+            <div>
+              <div style="font-size: 0.8rem; color: var(--text)">
+                React · Vue · CSS
+              </div>
+              <div style="font-size: 0.72rem; color: var(--text3)">
+                Frontend Stack
+              </div>
+            </div>
+          </div>
+          <div class="floating-card floating-card-3">
+            <span class="icon" aria-hidden="true"><img src="assets/icons/mobile.png" alt="" /></span>
+            <div>
+              <div style="font-size: 0.8rem; color: var(--text)">
+                Responsive
+              </div>
+              <div style="font-size: 0.72rem; color: var(--accent3)">
+                All Devices
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SKILLS ========== -->
+    <section id="skills">
+      <div class="container">
+        <div class="skills-header">
+          <div>
+            <div class="section-tag reveal">Expertise</div>
+            <h2 class="section-title reveal reveal-delay-1">
+              Tech Stack & <em>Expertise</em>
+            </h2>
+            <p class="section-desc reveal reveal-delay-2">
+              I master front-end technologies and tools to build beautiful and functional interfaces.
+            </p>
+          </div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal" data-delay="0">
+            <div class="skill-icon" aria-hidden="true"><img src="icons/html.png" alt="Logo HTML5" /></div>
+            <div class="skill-name">HTML5</div>
+            <div class="skill-desc">
+              Semantic Markup, Aksesibilitas, SEO, Web Structure
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="95"></div>
+            </div>
+            <div class="skill-percent">95%</div>
+          </div>
+          <div class="skill-card reveal reveal-delay-1" data-delay="100">
+            <div class="skill-icon" aria-hidden="true"><img src="icons/css.png" alt="Logo CSS" /></div>
+            <div class="skill-name">CSS3</div>
+            <div class="skill-desc">
+              Flexbox, Grid, Animasi, Custom Properties, Responsive
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="93"></div>
+            </div>
+            <div class="skill-percent">93%</div>
+          </div>
+          <div class="skill-card reveal reveal-delay-2" data-delay="200">
+            <div class="skill-icon" aria-hidden="true"><img src="icons/javascript.png" alt="Logo Javascript" /></div>
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-desc">
+              DOM Manipulation, ES6+, Async/Await, Fetch API
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="88"></div>
+            </div>
+            <div class="skill-percent">88%</div>
+          </div>
+          <div class="skill-card reveal reveal-delay-3" data-delay="300">
+            <div class="skill-icon" aria-hidden="true"><img src="icons/vuejs.png" alt="Logo Vuejs" /></div>
+            <div class="skill-name">Vue.js</div>
+            <div class="skill-desc">
+              Data Binding, Computed Properties, Vite, Methods, Watchers
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="65"></div>
+            </div>
+            <div class="skill-percent">65%</div>
+          </div>
+          <div class="skill-card reveal" data-delay="100">
+            <div class="skill-icon" aria-hidden="true"><img src="icons/figma.png" alt="Logo Figma" /></div>
+            <div class="skill-name">Figma</div>
+            <div class="skill-desc">
+              Wireframing, Prototyping, Design System, Dev Handoff
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="58"></div>
+            </div>
+            <div class="skill-percent">58%</div>
+          </div>
+          <div class="skill-card reveal reveal-delay-1" data-delay="200">
+            <div class="skill-icon" aria-hidden="true"><img src="icons/tailwind css.png" alt="Logo Tailwind CSS" /></div>
+            <div class="skill-name">Tailwind CSS</div>
+            <div class="skill-desc">
+              Utility-First, Responsive Design, Custom Themes, Flex/Grid
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="87"></div>
+            </div>
+            <div class="skill-percent">87%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS ========== -->
+    <section id="projects">
+      <div class="container">
+        <div class="projects-header">
+          <div>
+            <div class="section-tag reveal">Portfolio</div>
+            <h2 class="section-title reveal reveal-delay-1">
+              Featured <em>Projects</em>
+            </h2>
+            <p class="section-desc reveal reveal-delay-2">
+              Featured frontend projects I have built, from institutional websites
+              to interactive applications, showcasing my ability to create
+              engaging and functional user interfaces.
+            </p>
+          </div>
+        </div>
+        <!-- PROJECT 1 -->
+        <div class="projects-grid">
+          <div class="project-card reveal scale-in">
+            <div
+              class="project-image"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  #1a1a2e 0%,
+                  #16213e 50%,
+                  #0f3460 100%
+                );
+              "
+            >
+              <img
+                class="project-thumb"
+                src="assets/mimbaan.png"
+                alt="tampilan website kelurahan mimbaan"
+              />
+              <div class="project-overlay">
+                <a href="https://achraflyy48.github.io/Website-Pemerintah-Kelurahan-Mimbaan/" target="_blank">
+                  <button class="overlay-btn live"><img class="overlay-btn-icon" src="assets/icons/rocket.png" alt="" />Live Demo</button>
+                </a>
+                <a
+                  href="https://github.com/achraflyy48/Website-Pemerintah-Kelurahan-Mimbaan"
+                  target="_blank"
+                >
+                  <button class="overlay-btn code">GitHub</button>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag red">HTML</span>
+                <span class="tag pink">Tailwind CSS</span>
+                <span class="tag yellow">Javascript</span>
+              </div>
+              <div class="project-name">
+                Website Pemerintah Kelurahan Mimbaan
+              </div>
+              <div class="project-desc">
+                The official digital platform for information transparency, public services, and promotion of the potential of the Mimbaan Village, Panji District, Situbondo Regency.
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2 -->
+          <div class="project-card reveal scale-in reveal-delay-1">
+            <div
+              class="project-image"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  #0d1117 0%,
+                  #161b22 50%,
+                  #1a1f2c 100%
+                );
+              "
+            >
+              <img
+                class="project-thumb"
+                src="assets/SistemInventarisBarang.png"
+                alt="Website Sistem Inventaris Barang"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://crud-vue-project.vercel.app/"
+                  target="_blank"
+                >
+                  <button class="overlay-btn live">Live Demo</button>
+                </a>
+                <a
+                  href="https://github.com/achraflyy48/CRUD-VUE-PROJECT.git"
+                  target="_blank"
+                >
+                  <button class="overlay-btn code">GitHub</button>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag">Vue.js</span>
+                <span class="tag green">Supabase</span>
+                <span class="tag yellow">Javascript</span>
+              </div>
+              <div class="project-name">Sistem Inventaris Barang</div>
+              <div class="project-desc">
+                A modern Single Page Application (SPA) web application for managing asset and inventory records in real-time. Built using Vue.js 3 (Composition API) and Supabase, this application is designed with a minimalist dark-mode interface that focuses on speed, security, and optimal User Experience (UX).
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 3 -->
+          <div class="project-card reveal scale-in reveal-delay-2">
+            <div
+              class="project-image"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  #0f2027 0%,
+                  #203a43 50%,
+                  #2c5364 100%
+                );
+              "
+            >
+              <img
+                class="project-thumb"
+                src="assets/kmpmimbaan.png"
+                alt="tampilan website koperasi merah putih mimbaan"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://achraflyy48.github.io/Website-Koperasi-Merah-Putih-Mimbaan/"
+                  target="_blank"
+                >
+                  <button class="overlay-btn live">Live Demo</button>
+                </a>
+                <a
+                  href="https://github.com/achraflyy48/Website-Koperasi-Merah-Putih-Mimbaan"
+                  target="_blank"
+                >
+                  <button class="overlay-btn code">GitHub</button>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag red">HTML</span>
+                <span class="tag pink">Tailwind CSS</span>
+                <span class="tag yellow">Javascript</span>
+              </div>
+              <div class="project-name">
+                Website Koperasi Merah Putih Mimbaan
+              </div>
+              <div class="project-desc">
+                A website-based digital information system containing information on activities and services provided by the Merah Putih Cooperative Mimbaan.
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 4 -->
+          <div class="project-card reveal scale-in">
+            <div
+              class="project-image"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  #1a0533 0%,
+                  #2d1b69 50%,
+                  #11998e 100%
+                );
+              "
+            >
+              <img
+                class="project-thumb"
+                src="assets/tradisea.png"
+                alt="TradiSea Landing Page"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://tradisea.vercel.app/"
+                  target="_blank"
+                  ><button class="overlay-btn live">Live Demo</button></a
+                >
+                <a
+                  href="https://github.com/achraflyy48/WEBSITE-TRADISEA-CAFE-RESTO.git"
+                  target="_blank"
+                  ><button class="overlay-btn code">GitHub</button></a
+                >
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag red">HTML</span>
+                <span class="tag yellow">Javascript</span>
+                <span class="tag pink">Tailwind CSS</span>
+              </div>
+              <div class="project-name">
+                TradiSea Landing Page
+              </div>
+              <div class="project-desc">
+                A premium landing page designed for culinary businesses, heritage stays, and sustainable agrotourism based in Situbondo, East Java. This website is designed with a modern approach, prioritizing performance, accessibility, and language flexibility (bilingual).
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 5 -->
+          <div class="project-card reveal scale-in reveal-delay-1">
+            <div
+              class="project-image"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  #1c1c3a 0%,
+                  #2d2b55 50%,
+                  #3a2f7c 100%
+                );
+              "
+            >
+              <img
+                class="project-thumb"
+                src="assets/finsetapp.png"
+                alt="FINSET APP"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://finset-app-flax.vercel.app/"
+                  target="_blank"
+                  ><button class="overlay-btn live">Live Demo</button></a
+                >
+                <a
+                  href="https://github.com/achraflyy48/FINSET-APP.git"
+                  target="_blank"
+                  ><button class="overlay-btn code">GitHub</button></a
+                >
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag red">HTML</span>
+                <span class="tag yellow">Javascript</span>
+                <span class="tag green">Vue.js</span>
+              </div>
+              <div class="project-name">FINSET APP</div>
+              <div class="project-desc">A modern, responsive, and secure personal finance management web application, designed to help users control their budgets, monitor transactions, and achieve their financial goals with ease.</div>
+            </div>
+          </div>
+
+          <!-- PROJECT 6 -->
+          <div class="project-card reveal scale-in reveal-delay-2">
+            <div
+              class="project-image"
+              style="
+                background: linear-gradient(
+                  135deg,
+                  #0a2342 0%,
+                  #126e82 50%,
+                  #51c4d3 100%
+                );
+              "
+            >
+              <div class="project-thumb"></div>
+              <div class="project-overlay">
+                <button class="overlay-btn live">Live Demo</button>
+                <button class="overlay-btn code">GitHub</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="tag pink">React Native</span>
+                <span class="tag">Expo</span>
+                <span class="tag">Reanimated</span>
+              </div>
+              <div class="project-name">Comming Soon</div>
+              <div class="project-desc">Comming Soon</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EXPERIENCE ========== -->
+    <section id="experience">
+      <div class="container">
+        <div class="experience-content">
+          <div class="exp-left">
+            <div class="section-tag reveal">Perjalanan</div>
+            <h2 class="section-title reveal reveal-delay-1">
+              Pengalaman <em>Kerja</em>
+            </h2>
+            <p class="section-desc reveal reveal-delay-2">
+              Rekam jejak profesional dalam membangun antarmuka pengguna yang
+              berdampak.
+            </p>
+            <div style="margin-top: 2.5rem" class="reveal reveal-delay-3">
+              <a
+                href="https://drive.google.com/file/d/1eZAO1nAxZfWXOwKmcf63ioJfKVkx370B/view?usp=drive_link"
+                class="btn btn-green"
+                target="_blank"
+              >
+                <span>📄</span> Download Full CV
+              </a>
+            </div>
+          </div>
+
+          <div class="timeline reveal reveal-delay-2">
+            <div class="timeline-item">
+              <div class="exp-company">KELURAHAN MIMBAAN</div>
+              <div class="exp-role">Staf Administrasi & IT Support</div>
+              <div class="exp-period">2024 — 2026 · Full-time</div>
+              <div class="exp-desc">
+                Mengelola administrasi kependudukan dan surat-menyurat resmi
+                kelurahan secara terstruktur dan sistematis. Bertanggung jawab
+                atas pengelolaan konten dan SEO website profil kelurahan untuk
+                meningkatkan transparansi informasi publik.
+              </div>
+            </div>
+
+            <!-- <div class="timeline-item">
+              <div class="exp-company">Startup Fintech — GoMoney</div>
+              <div class="exp-role">Frontend Developer</div>
+              <div class="exp-period">2022 — 2023 · 1 tahun</div>
+              <div class="exp-desc">
+                Mengembangkan tampilan fitur transfer & pembayaran digital
+                menggunakan React + TypeScript. Berkolaborasi langsung dengan
+                tim desainer Figma dan mengimplementasikan micro-interaction
+                yang meningkatkan konversi 25%.
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="exp-company">Freelance</div>
+              <div class="exp-role">Frontend Developer</div>
+              <div class="exp-period">2021 — 2022 · Freelance</div>
+              <div class="exp-desc">
+                Membangun 15+ landing page, company profile, dan tampilan
+                aplikasi untuk klien UMKM dan startup lokal. Fokus pada desain
+                responsif, performa loading, dan pengalaman pengguna yang
+                menarik.
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="exp-company">Universitas Brawijaya</div>
+              <div class="exp-role">S1 Teknik Informatika</div>
+              <div class="exp-period">2017 — 2021 · Malang</div>
+              <div class="exp-desc">
+                Lulus dengan IPK 3.75. Aktif di UKM Desain Grafis dan komunitas
+                web developer kampus. Tugas akhir: Aplikasi Visualisasi Data
+                Interaktif Berbasis Web dengan D3.js.
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-wrapper reveal scale-in">
+          <div>
+            <div class="section-tag" style="margin-bottom: 1.25rem">Kontak</div>
+            <div class="contact-title">
+              Mari Berkolaborasi <em style="color: var(--accent)">Bersama!</em>
+            </div>
+            <p class="contact-desc">
+              Tertarik untuk bekerja sama membangun UI yang indah? Saya terbuka
+              untuk peluang baru, freelance project, atau sekadar ngobrol
+              tentang desain dan frontend.
+            </p>
+            <div class="contact-links">
+              <a href="achmadraflitp@gmail.com" class="contact-link">
+                <img class="link-icon" src="https://img.icons8.com/?size=100&id=124383&format=png&color=000000" alt="Logo email" />
+                achmadraflitp@gmail.com
+              </a>
+              <a
+                href="https://www.linkedin.com/in/achmad-rafli-teguh-pradana-susanto-b5a22a352/"
+                target="_blank"
+                class="contact-link"
+              >
+                <img class="link-icon" src="https://img.icons8.com/?size=100&id=447&format=png&color=000000" alt="Logo linkedin" />
+                Achmad Rafli Teguh Pradana Susanto
+              </a>
+              <a
+                href="https://github.com/achraflyy48"
+                target="_blank"
+                class="contact-link"
+              >
+                <img class="link-icon" src="https://img.icons8.com/?size=100&id=12598&format=png&color=000000" alt="Logo github" />
+                achraflyy48
+              </a>
+              <a
+                href="https://wa.me/6285736184601"
+                target="_blank"
+                class="contact-link"
+              >
+                <img class="link-icon" src="https://img.icons8.com/?size=100&id=16712&format=png&color=000000" alt="Logo WhatsApp" />
+                085736184601
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="contact-form">
+              <div class="form-group">
+                <label class="form-label">Nama Lengkap</label>
+                <input
+                  type="text"
+                  class="form-input"
+                  id="nama"
+                  placeholder="Masukkan nama lengkap anda"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-input"
+                  id="email"
+                  placeholder="Masukkan email anda"
+                />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Pesan</label>
+                <textarea
+                  class="form-textarea"
+                  id="pesan"
+                  rows="4"
+                  placeholder="Halo Rafli, saya ingin..."
+                ></textarea>
+              </div>
+
+              <button
+                class="btn btn-primary"
+                style="width: 100%; justify-content: center; padding: 0.9rem"
+                onclick="handleSend()"
+              >
+                <span>✉️</span> Kirim Pesan
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+      <div class="footer-copy">
+        © 2026 Achmad Rafli Teguh Pradana Susanto - Front-End Developer
+      </div>
+    </footer>
+    <script src="porto.js"></script>
+  </body>
+</html>
